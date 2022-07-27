@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+/* start header  */
+header .container-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+header .range {
+  font-size: 18px;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  header .container-media {
+    display: block;
+  }
+  header .btn-head {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  header .range {
+    text-align: center;
+  }
+}
+/* end header  */
+
+/* start head  */
+.head {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-bottom: 7px solid #fff;
+  position: relative;
+}
+
+.head h2 {
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 767px) {
+  .head h2 {
+    font-size: 25px;
+  }
+}
+
+.head .question {
+  background-color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 120px;
+  padding: 20px 40px;
+  color: #222;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+}
+
+/* end head  */
+
+/* start section  */
+.container .container-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 40px;
+}
+
+@media (max-width: 767px) {
+  .container .container-media {
+    display: block;
+  }
+}
+
+/* left */
+.container .left {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+@media (max-width: 767px) {
+  .container .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.container .left input {
+  width: 250px;
+  height: 120px;
+  margin: 30px auto;
+  background-color: transparent;
+  border: 5px solid #fff;
+  font-size: 60px;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.container .left .btn-check {
+  margin: 10px auto;
+}
+
+.container .left input:focus {
+  outline: none;
+}
+
+/* right */
+.container .right {
+  width: 50%;
+  line-height: 1.6;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .container .right {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .container .right {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .container .right {
+    font-size: 20px;
+  }
+}
+
+.container .right .start {
+  padding-bottom: 90px;
+}
+
+@media (max-width: 767px) {
+  .container .right .start {
+    padding-bottom: 50px;
+  }
+}
+
+.container .right .score {
+  margin-bottom: 20px;
+}
+
+.container .right span {
+  color: aqua;
+}
+/* end section */
+
+/* Start Component */
+.btn {
+  padding: 20px 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.btn:hover {
+  background-color: rgb(18, 161, 161);
+  color: #fff;
+}
+
+.container-media {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container-media {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-media {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-media {
+    width: 1170px;
+  }
+}
+
+/* for final score */
+.final-score {
+  width: 700px;
+  height: 400px;
+  background-color: #333;
+  border: 1px solid #444;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: bottom bottom;
+  transform-style: preserve-3d;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.final-score .final {
+  font-size: 25px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .final-score .final {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.final-score span {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.final-score span:hover {
+  background-color: rgb(71, 228, 51);
+}
+
+@media (max-width: 767px) {
+  .final-score {
+    width: calc(100% - 50px);
+    margin: 10px auto;
+  }
+}
+/* End Component */

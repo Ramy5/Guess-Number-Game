@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container-media">
+        <button class="btn-head btn" type="button">Again!</button>
+        <p class="range">(Between 1 and 20)</p>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start head -->
+    <div class="head">
+      <div class="container-media">
+        <h2>Guess My Number!</h2>
+        <p class="question">?</p>
+      </div>
+    </div>
+    <!-- end head -->
+
+    <!-- start sections -->
+    <div class="container">
+      <div class="container-media">
+        <!-- left -->
+        <section class="left">
+          <input
+            class="field"
+            title="Number"
+            type="number"
+            name="number"
+            min="0"
+            max="20"
+          />
+          <button class="btn-check btn" type="button">Check!</button>
+        </section>
+
+        <!-- right -->
+        <section class="right">
+          <h4 class="start">Start guessing...</h4>
+          <p class="score">💯 Counts: <span class="spn-score">5</span></p>
+          <p class="highscore">🥇 Highscore: <span class="spn-high">0</span></p>
+        </section>
+      </div>
+    </div>
+    <!-- end sections -->
+
+    <!-- for final score  -->
+    <div class="final-score">
+      <span>x</span>
+      <p class="final"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
