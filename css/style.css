@@ -10,6 +10,7 @@ body {
   font-family: "Press Start 2P", sans-serif;
   background-color: #222;
   color: #fff;
+  height: 100%;
 }
 
 /* start header  */
@@ -21,9 +22,10 @@ header .container-media {
 }
 
 header .range {
-  font-size: 18px;
+  font-size: 17px;
   padding: 20px 0;
   font-style: italic;
+  color: rgb(26, 218, 218);
 }
 
 @media (max-width: 767px) {
@@ -51,12 +53,16 @@ header .range {
 
 .head h2 {
   font-size: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 767px) {
+  .head {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .head h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -90,6 +96,7 @@ header .range {
 @media (max-width: 767px) {
   .container .container-media {
     display: block;
+    padding: 70px 40px 20px;
   }
 }
 
@@ -110,7 +117,7 @@ header .range {
 .container .left input {
   width: 250px;
   height: 120px;
-  margin: 30px auto;
+  margin: 20px auto;
   background-color: transparent;
   border: 5px solid #fff;
   font-size: 60px;
@@ -156,12 +163,14 @@ header .range {
 }
 
 .container .right .start {
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
   .container .right .start {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    line-height: 2;
   }
 }
 
@@ -224,8 +233,6 @@ header .range {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transform-origin: bottom bottom;
-  transform-style: preserve-3d;
   transition: 1s;
   display: flex;
   justify-content: center;
@@ -244,24 +251,24 @@ header .range {
 @media (max-width: 767px) {
   .final-score .final {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4;
   }
 }
 
 .final-score span {
   width: 50px;
   height: 50px;
-  background-color: #f00;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 25px;
+  color: #f00;
+  font-size: 40px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 3px;
+  right: -3px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -273,7 +280,7 @@ header .range {
 @media (max-width: 767px) {
   .final-score {
     width: calc(100% - 50px);
-    margin: 10px auto;
+    margin: 20px auto;
   }
 }
 /* End Component */
